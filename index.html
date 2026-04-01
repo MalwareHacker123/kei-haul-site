@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Kei Haul — appliance and furniture moves in Denver, CO and beyond. Upfront pricing, fast response." />
+  <title>Kei Haul | Denver Hauling and Appliance Moves</title>
+
+  <style>
+    :root{
+      --bg:#0b0b10;
+      --card:#12121a;
+      --text:#f4f4ff;
+      --muted:#b8b8cc;
+      --brand:#5B2EFF;
+      --brand2:#00D1B2;
+      --shadow: 0 18px 55px rgba(0,0,0,.55);
+      --radius: 18px;
+      --radius2: 26px;
+      --max: 1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color:var(--text);
+      background:
+        radial-gradient(900px 500px at 12% -10%, rgba(91,46,255,.55), transparent 55%),
+        radial-gradient(900px 500px at 88% 0%, rgba(0,209,178,.25), transparent 55%),
+        radial-gradient(700px 500px at 50% 120%, rgba(91,46,255,.20), transparent 55%),
+        var(--bg);
+      line-height:1.55;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:24px}
+
+    header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(14px);
+      background: linear-gradient(to bottom, rgba(11,11,16,.92), rgba(11,11,16,.55));
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .nav{display:flex; gap:14px; align-items:center; justify-content:space-between; padding:14px 0; flex-wrap:wrap}
+    .brand{display:flex; align-items:center; gap:12px; text-decoration:none}
+    .mark{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--brand),rgba(0,209,178,.9));display:grid;place-items:center;box-shadow:0 14px 40px rgba(91,46,255,.35)}
+    .mark svg{width:22px;height:22px}
+    .pill{display:inline-flex; gap:10px; align-items:center; padding:10px 12px; border:1px solid rgba(255,255,255,.12); border-radius:999px; background: rgba(18,18,26,.65)}
+    .pill small{color:var(--muted)}
+    .links{display:flex; gap:8px; flex-wrap:wrap}
+    .links a{text-decoration:none; color:var(--muted); padding:10px 10px; border-radius:10px}
+    .links a:hover{color:var(--text); background: rgba(255,255,255,.06)}
+
+    .btn{display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:12px 14px; border-radius:14px; border:1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.06); color:var(--text); text-decoration:none}
+    .btn.primary{border-color: rgba(91,46,255,.55); background: linear-gradient(135deg, rgba(91,46,255,.95), rgba(0,209,178,.60))}
+
+    .card{background: rgba(18,18,26,.78); border: 1px solid rgba(255,255,255,.10); border-radius: var(--radius2); box-shadow: var(--shadow); overflow:hidden}
+    .pad{padding:22px}
+    h1{margin:14px 0 10px; font-size: clamp(30px, 4.2vw, 54px); line-height:1.05}
+    h2{margin:0 0 10px; font-size: 22px}
+    .muted{color:var(--muted)}
+    .grid{display:grid; gap:18px; grid-template-columns: 1.2fr .8fr; align-items:stretch}
+    @media (max-width: 900px){ .grid{grid-template-columns: 1fr} }
+    .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:16px}
+    .cols{display:grid; gap:14px; grid-template-columns: repeat(3, 1fr)}
+    @media (max-width: 900px){ .cols{grid-template-columns: 1fr} }
+    .tile{padding:18px; border-radius: var(--radius); background: rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.10)}
+    .tile b{display:block; margin-bottom:6px}
+    .pricing{display:grid; gap:14px; grid-template-columns: 1fr 1fr}
+    @media (max-width: 900px){ .pricing{grid-template-columns: 1fr} }
+    .list{margin:10px 0 0; padding-left: 18px; color:var(--muted)}
+    .list li{margin:6px 0}
+    .note{margin-top:10px; padding:12px 12px; border-radius: 14px; border:1px dashed rgba(255,255,255,.18); background: rgba(255,255,255,.03); color: var(--muted)}
+    .faq{display:grid; gap:10px}
+    details{border-radius: var(--radius); border:1px solid rgba(255,255,255,.10); background: rgba(255,255,255,.04); overflow:hidden}
+    summary{cursor:pointer; list-style:none; padding:14px 16px; font-weight:700}
+    summary::-webkit-details-marker{display:none}
+    .ans{padding:0 16px 16px; color:var(--muted)}
+    footer{padding:28px 0 60px; color: var(--muted)}
+    .hr{height:1px; background: rgba(255,255,255,.10); margin: 18px 0}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="#top" aria-label="Kei Haul home">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 15.5V8.8c0-.5.25-.97.67-1.25l6.5-4.3c.5-.33 1.15-.33 1.65 0l6.5 4.3c.42.28.67.75.67 1.25v6.7c0 .62-.33 1.2-.86 1.52l-6.5 3.95c-.43.26-.97.26-1.4 0l-6.5-3.95A1.78 1.78 0 0 1 4 15.5Z" stroke="white" stroke-width="1.6"/>
+              <path d="M8.2 12h7.6" stroke="white" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M12 8.2v7.6" stroke="white" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span>
+            <b>Kei Haul</b><br />
+            <small class="muted">Krafty • efficient • innovative</small>
+          </span>
+        </a>
+
+        <div class="links" aria-label="Site navigation">
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#about">About</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="pill" title="Service area">
+          <small>Denver, CO</small>
+          <span aria-hidden="true">•</span>
+          <small>Dense cities and rural towns</small>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="wrap">
+    <section style="padding:34px 0 10px">
+      <div class="grid">
+        <div class="card"><div class="pad">
+          <h1>Moves that feel easy—<span style="background:linear-gradient(135deg,var(--brand),var(--brand2)); -webkit-background-clip:text; background-clip:text; color:transparent; font-weight:800">even when the item isn’t</span>.</h1>
+          <p class="muted" style="font-size:16px;max-width:62ch;margin-top:0">Kei Haul helps with hauling and delivery for furniture and large appliances across <b>Denver, Colorado</b> and surrounding areas. Upfront estimates, careful handling, fast communication.</p>
+          <div class="cta">
+            <a class="btn primary" href="tel:+17204226446">Call Zeke: 720-422-6446</a>
+            <a class="btn" href="tel:+17204507892">Call Myles: 720-450-7892</a>
+            <a class="btn" href="mailto:haulkei@gmail.com?subject=Kei%20Haul%20Estimate%20Request">Email: haulkei@gmail.com</a>
+          </div>
+          <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; color:var(--muted); font-size:13px">
+            <span style="padding:8px 10px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)">First 10 miles free</span>
+            <span style="padding:8px 10px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)">Careful handling</span>
+            <span style="padding:8px 10px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)">Fast response</span>
+          </div>
+        </div></div>
+
+        <div class="card"><div class="pad">
+          <h2 style="margin-top:0">Quick estimate checklist</h2>
+          <p class="muted">Text or email these details for an accurate quote:</p>
+          <ul class="list">
+            <li>Pickup and dropoff areas (or zip codes)</li>
+            <li>Item list and approximate sizes</li>
+            <li>Stairs/floors and elevator availability</li>
+            <li>Any tight hallways/turns</li>
+            <li>Preferred day/time window</li>
+          </ul>
+          <div class="note"><b>Heads up:</b> We will NOT assemble/disassemble complex or antique utilities/furniture (stove, bed frames, complex washer/dryer sets, etc). Please ask if you have any specific questions.</div>
+        </div></div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <p class="muted">Large appliance movement, home-to-home service, and coverage for dense cities and rural towns.</p>
+      <div class="cols">
+        <div class="tile"><b>Large appliance movement</b><span class="muted">Washers, dryers, fridges, and more—moved safely from door to door.</span></div>
+        <div class="tile"><b>Home-to-home service</b><span class="muted">Pickup and delivery between homes, apartments, stores, and storage.</span></div>
+        <div class="tile"><b>Denver and beyond</b><span class="muted">Mileage pricing keeps it straightforward for city and rural jobs.</span></div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <h2>Pricing (estimate)</h2>
+      <p class="muted">Total = item prices + mileage + extra trips + difficulty add-ons</p>
+
+      <div class="pricing">
+        <div class="tile"><b>Mileage</b><ul class="list"><li><b>First 10 miles:</b> FREE</li><li><b>After 10 miles:</b> $0.50 per additional mile</li></ul></div>
+        <div class="tile"><b>Weight add-on</b><ul class="list"><li>Every <b>100 lbs over 200</b> (single item) is <b>+ $20</b></li></ul></div>
+        <div class="tile"><b>Item count discounts</b><ul class="list"><li><b>1 item:</b> full price</li><li><b>2nd item:</b> $5 off</li><li><b>3rd+ items:</b> $10 off</li><li><b>Bulk sale (8+ items, small items only):</b> $18 each item</li></ul></div>
+        <div class="tile"><b>Base item pricing</b><ul class="list"><li><b>Small</b>: $30 (+$2.50 each additional floor)</li><li><b>Medium</b>: $50 (+$7.50 each additional floor)</li><li><b>Large</b>: $75 (+$10 each additional floor)</li><li><b>Appliance</b>: $100 (+$15 each additional floor)</li></ul></div>
+      </div>
+
+      <div class="card" style="margin-top:14px"><div class="pad">
+        <h2 style="margin:0 0 6px">Examples</h2>
+        <div class="cols">
+          <div class="tile"><b>Example 1: Bedroom (2nd floor)</b><ul class="list"><li>Couch — $57.50</li><li>Large bed — $80</li><li>Dresser — $22.50</li><li>Wardrobe — $75</li><li><b>Total: $235</b></li></ul></div>
+          <div class="tile"><b>Example 2: Kitchen</b><ul class="list"><li>Washing machine — $100</li><li>Fridge — $95</li><li>Stove — $90</li><li>Kitchenware box — $20</li><li><b>Total: $305</b></li></ul></div>
+          <div class="tile"><b>Example 3: Washer/Dryer set</b><ul class="list"><li>Washer (250 lbs) — $125</li><li>Dryer (200 lbs) — $90</li><li>Cleaning kit/boxes — $20</li><li><b>Total: $235</b></li></ul></div>
+        </div>
+        <div class="note">Extra trips and difficulty add-ons are quoted up front once we see the details.</div>
+      </div></div>
+    </section>
+
+    <section id="about">
+      <h2>About Kei Haul</h2>
+      <div class="card"><div class="pad"><p class="muted" style="margin:0">Kei Haul is a Denver-based hauling and delivery service focused on being <b>krafty</b>, <b>efficient</b>, and <b>innovative</b>. We serve dense city buildings and rural towns alike.</p></div></div>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <div class="faq">
+        <details><summary>Do you assemble or disassemble items?</summary><div class="ans">We will NOT assemble/disassemble complex or antique utilities/furniture (stoves, some bed frames, complex washer/dryer sets). If you’re unsure, send a photo and we’ll tell you quickly.</div></details>
+        <details><summary>How does mileage pricing work?</summary><div class="ans">First 10 miles are free. After 10 miles, it’s $0.50 per additional mile.</div></details>
+        <details><summary>What should I send for a fast estimate?</summary><div class="ans">Pickup and dropoff area, item list, floors/stairs (and elevator), and any tight spaces. Photos help a lot.</div></details>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="muted">Fastest way: call or text. Email works great for photos and item lists.</p>
+      <div class="cols">
+        <div class="tile"><b>Call</b><div style="margin-top:10px;display:flex;gap:10px;flex-wrap:wrap"><a class="btn primary" href="tel:+17204226446">Zeke: 720-422-6446</a><a class="btn" href="tel:+17204507892">Myles: 720-450-7892</a></div></div>
+        <div class="tile"><b>Email</b><div style="margin-top:10px"><code style="background:rgba(0,0,0,.35);padding:2px 8px;border-radius:999px;border:1px solid rgba(255,255,255,.10)">haulkei@gmail.com</code><div style="margin-top:10px"><a class="btn" href="mailto:haulkei@gmail.com?subject=Kei%20Haul%20Estimate%20Request">Send email</a></div></div></div>
+        <div class="tile"><b>Booking</b><div class="muted" style="margin-top:10px">No booking link yet—contact us to lock in a time.</div></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="hr"></div>
+      <div class="muted">© <span id="y"></span> Kei Haul. Denver, Colorado.</div>
+    </footer>
+  </main>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
