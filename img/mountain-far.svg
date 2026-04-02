@@ -1,21 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 420" preserveAspectRatio="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 480" preserveAspectRatio="none">
   <defs>
-    <linearGradient id="gf" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#5a7da8"/>
-      <stop offset="100%" stop-color="#2d4d6e"/>
+    <linearGradient id="rock" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5b7ea5"/>
+      <stop offset="55%" stop-color="#3d5f82"/>
+      <stop offset="100%" stop-color="#243d58"/>
+    </linearGradient>
+    <linearGradient id="snowCap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f2f7ff"/>
+      <stop offset="100%" stop-color="#b8cce8"/>
     </linearGradient>
   </defs>
-  <!-- Symmetric ridge: peaks mirrored around x=720 -->
-  <path fill="url(#gf)" d="M0 420 L0 298 L120 268 L180 208 L280 258 L400 182 L520 248 L640 168 L720 198 L800 152 L920 238 L1040 178 L1160 252 L1280 192 L1360 222 L1440 288 L1440 420 Z"/>
-  <!-- Snow cap on every major peak (apex-centered) -->
-  <g fill="#eef6ff" opacity="0.34">
-    <path d="M168 210 L180 180 L192 210 Z"/>
-    <path d="M388 184 L400 154 L412 184 Z"/>
-    <path d="M628 170 L640 140 L652 170 Z"/>
-    <path d="M708 200 L720 172 L732 200 Z"/>
-    <path d="M788 154 L800 124 L812 154 Z"/>
-    <path d="M1028 180 L1040 150 L1052 180 Z"/>
-    <path d="M1268 194 L1280 164 L1292 194 Z"/>
-    <path d="M1348 224 L1360 194 L1372 224 Z"/>
-  </g>
+  <!-- Full mass: smooth ridgeline (not spike triangles) -->
+  <path fill="url(#rock)" d="M0 480 L0 310 C40 298 72 288 108 302 C142 268 178 252 210 272 C248 228 292 248 332 218 C368 188 402 208 438 182 C478 148 518 178 558 152 C598 118 638 152 682 128 C722 98 758 132 802 108 C848 82 888 118 932 92 C978 68 1018 108 1062 88 C1108 68 1148 112 1192 98 C1232 82 1272 118 1312 102 C1352 88 1388 122 1440 108 L1440 480 Z"/>
+  <!-- Snow along upper slopes (wide bands hugging peaks) -->
+  <path fill="url(#snowCap)" opacity="0.38" d="M0 310 C40 298 72 288 108 302 L118 292 C150 275 185 265 215 278 L228 262 C265 242 305 255 338 228 L352 218 C385 198 420 208 450 188 L465 178 C498 158 535 172 568 148 L585 138 C618 118 655 138 688 118 L705 108 C738 92 772 112 805 95 L822 88 C855 72 888 95 922 78 L938 72 C972 58 1005 82 1038 68 L1055 62 C1088 52 1122 78 1155 65 L1172 60 C1205 52 1238 78 1272 68 L1288 62 C1322 55 1355 82 1390 72 L1405 68 C1420 65 1435 88 1440 85 L1440 175 C1395 195 1355 185 1315 205 C1275 225 1235 198 1195 218 C1155 238 1115 208 1075 228 C1035 248 995 215 955 235 C915 255 875 222 835 242 C795 262 755 232 715 252 C675 272 635 242 595 262 C555 282 515 252 475 272 C435 292 395 262 355 282 C315 302 275 272 235 292 C195 312 155 282 115 302 C75 322 35 295 0 315 Z"/>
 </svg>
