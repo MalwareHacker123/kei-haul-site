@@ -12,8 +12,9 @@
       var s = parseFloat(el.getAttribute("data-parallax"), 10) || 0;
       el.style.transform = "translate3d(0, " + Math.round(y * s) + "px, 0)";
     });
-    if (sun && sunSpeed !== 0) {
-      sun.style.transform = "translate3d(0, " + Math.round(y * sunSpeed) + "px, 0)";
+    if (sun) {
+      var sy = sunSpeed !== 0 ? Math.round(y * sunSpeed) : 0;
+      sun.style.transform = "translate3d(-50%, " + sy + "px, 0)";
     }
     ticking = false;
   }
