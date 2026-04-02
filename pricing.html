@@ -8,6 +8,14 @@
   <link rel="stylesheet" href="css/site.css" />
 </head>
 <body>
+  <div class="mountain-backdrop" aria-hidden="true">
+    <div class="mb-sky"></div>
+    <div class="mb-sun"></div>
+    <div class="mb-layer mb-far" data-parallax="0.12"></div>
+    <div class="mb-layer mb-mid" data-parallax="0.24"></div>
+    <div class="mb-layer mb-near" data-parallax="0.38"></div>
+    <div class="mb-vignette"></div>
+  </div>
   <header>
     <div class="wrap">
       <div class="nav">
@@ -29,7 +37,6 @@
           <a href="faq.html">FAQ</a>
           <a href="contact.html">Contact</a>
         </nav>
-        <div class="pill"><small>Denver, CO</small><span aria-hidden="true">•</span><small>Dense cities and rural towns</small></div>
       </div>
     </div>
   </header>
@@ -63,6 +70,7 @@
       <div class="muted">© <span id="y"></span> Kei Haul. Denver, Colorado.</div>
     </footer>
   </main>
+  <script src="js/parallax.js"></script>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>

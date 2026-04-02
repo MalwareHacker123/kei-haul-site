@@ -8,6 +8,14 @@
   <link rel="stylesheet" href="css/site.css" />
 </head>
 <body>
+  <div class="mountain-backdrop" aria-hidden="true">
+    <div class="mb-sky"></div>
+    <div class="mb-sun"></div>
+    <div class="mb-layer mb-far" data-parallax="0.12"></div>
+    <div class="mb-layer mb-mid" data-parallax="0.24"></div>
+    <div class="mb-layer mb-near" data-parallax="0.38"></div>
+    <div class="mb-vignette"></div>
+  </div>
   <header>
     <div class="wrap">
       <div class="nav">
@@ -33,12 +41,6 @@
           <a href="faq.html">FAQ</a>
           <a href="contact.html">Contact</a>
         </nav>
-
-        <div class="pill" title="Service area">
-          <small>Denver, CO</small>
-          <span aria-hidden="true">•</span>
-          <small>Dense cities and rural towns</small>
-        </div>
       </div>
     </div>
   </header>
@@ -47,7 +49,7 @@
     <section style="padding-top:34px">
       <div class="grid">
         <div class="card"><div class="pad">
-          <h1>Moves that feel easy—<span style="background:linear-gradient(135deg,var(--brand),var(--brand2)); -webkit-background-clip:text; background-clip:text; color:transparent; font-weight:800">even when the item isn’t</span>.</h1>
+          <h1>Moves that feel easy—<span class="accent-gradient">even when the item isn’t</span>.</h1>
           <p class="muted" style="font-size:16px;max-width:62ch;margin-top:0">Kei Haul helps with hauling and delivery for furniture and large appliances across <b>Denver, Colorado</b> and surrounding areas. Upfront estimates, careful handling, fast communication.</p>
           <div class="cta">
             <a class="btn primary" href="contact.html">Get a quote — contact us</a>
@@ -82,6 +84,7 @@
     </footer>
   </main>
 
+  <script src="js/parallax.js"></script>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
