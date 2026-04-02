@@ -19,7 +19,7 @@
   <header>
     <div class="wrap">
       <div class="nav">
-        <a class="brand" href="index.html" aria-label="Kei Haul home">
+        <a class="brand ui-hover" href="index.html" aria-label="Kei Haul home">
           <span class="mark" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 15.5V8.8c0-.5.25-.97.67-1.25l6.5-4.3c.5-.33 1.15-.33 1.65 0l6.5 4.3c.42.28.67.75.67 1.25v6.7c0 .62-.33 1.2-.86 1.52l-6.5 3.95c-.43.26-.97.26-1.4 0l-6.5-3.95A1.78 1.78 0 0 1 4 15.5Z" stroke="white" stroke-width="1.6"/>
@@ -30,12 +30,20 @@
           <span><b>Kei Haul</b><br /><small class="muted">Krafty • efficient • innovative</small></span>
         </a>
         <nav class="links" aria-label="Site navigation">
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="about.html" aria-current="page">About</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html">Contact</a>
+          <a class="ui-hover" href="index.html">Home</a>
+          <details class="nav-services">
+            <summary>Services</summary>
+            <div class="nav-services-panel">
+              <a class="ui-hover" href="services.html#svc-appliances">Large appliances — quick rundown</a>
+              <a class="ui-hover" href="services.html#svc-home">Home-to-home — quick rundown</a>
+              <a class="ui-hover" href="services.html#svc-region">City &amp; rural — quick rundown</a>
+              <a class="nav-services-all ui-hover" href="services.html">Full services page →</a>
+            </div>
+          </details>
+          <a class="ui-hover" href="pricing.html">Pricing</a>
+          <a class="ui-hover" href="about.html" aria-current="page">About</a>
+          <a class="ui-hover" href="faq.html">FAQ</a>
+          <a class="ui-hover" href="contact.html">Contact</a>
         </nav>
       </div>
     </div>
@@ -44,10 +52,10 @@
   <main class="wrap">
     <h1 class="page-title">About Kei Haul</h1>
     <section>
-      <div class="card"><div class="pad">
+      <div class="card ui-hover"><div class="pad">
         <p class="muted" style="margin:0">Kei Haul is a Denver-based hauling and delivery service focused on being <b>krafty</b>, <b>efficient</b>, and <b>innovative</b>. We serve dense city buildings and rural towns alike.</p>
       </div></div>
-      <p style="margin-top:18px"><a class="btn primary" href="contact.html">Contact us</a></p>
+      <p style="margin-top:18px"><a class="btn primary ui-hover" href="contact.html">Contact us</a></p>
     </section>
     <footer>
       <div class="hr"></div>

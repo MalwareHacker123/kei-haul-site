@@ -19,7 +19,7 @@
   <header>
     <div class="wrap">
       <div class="nav">
-        <a class="brand" href="index.html" aria-label="Kei Haul home">
+        <a class="brand ui-hover" href="index.html" aria-label="Kei Haul home">
           <span class="mark" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 15.5V8.8c0-.5.25-.97.67-1.25l6.5-4.3c.5-.33 1.15-.33 1.65 0l6.5 4.3c.42.28.67.75.67 1.25v6.7c0 .62-.33 1.2-.86 1.52l-6.5 3.95c-.43.26-.97.26-1.4 0l-6.5-3.95A1.78 1.78 0 0 1 4 15.5Z" stroke="white" stroke-width="1.6"/>
@@ -34,12 +34,20 @@
         </a>
 
         <nav class="links" aria-label="Site navigation">
-          <a href="index.html" aria-current="page">Home</a>
-          <a href="services.html">Services</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="about.html">About</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html">Contact</a>
+          <a class="ui-hover" href="index.html" aria-current="page">Home</a>
+          <details class="nav-services">
+            <summary>Services</summary>
+            <div class="nav-services-panel">
+              <a class="ui-hover" href="services.html#svc-appliances">Large appliances — quick rundown</a>
+              <a class="ui-hover" href="services.html#svc-home">Home-to-home — quick rundown</a>
+              <a class="ui-hover" href="services.html#svc-region">City &amp; rural — quick rundown</a>
+              <a class="nav-services-all ui-hover" href="services.html">Full services page →</a>
+            </div>
+          </details>
+          <a class="ui-hover" href="pricing.html">Pricing</a>
+          <a class="ui-hover" href="about.html">About</a>
+          <a class="ui-hover" href="faq.html">FAQ</a>
+          <a class="ui-hover" href="contact.html">Contact</a>
         </nav>
       </div>
     </div>
@@ -48,22 +56,22 @@
   <main id="top" class="wrap">
     <section style="padding-top:34px">
       <div class="grid">
-        <div class="card"><div class="pad">
+        <div class="card ui-hover"><div class="pad">
           <h1>Moves that feel easy—<span class="accent-gradient">even when the item isn’t</span>.</h1>
           <p class="muted" style="font-size:16px;max-width:62ch;margin-top:0">Kei Haul helps with hauling and delivery for furniture and large appliances across <b>Denver, Colorado</b> and surrounding areas. Upfront estimates, careful handling, fast communication.</p>
           <div class="cta">
-            <a class="btn primary" href="contact.html">Get a quote — contact us</a>
-            <a class="btn" href="pricing.html">See pricing</a>
-            <a class="btn" href="services.html">Our services</a>
+            <a class="btn primary ui-hover" href="contact.html">Get a quote — contact us</a>
+            <a class="btn ui-hover" href="pricing.html">See pricing</a>
+            <a class="btn ui-hover" href="services.html">Our services</a>
           </div>
-          <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; color:var(--muted); font-size:13px">
-            <span style="padding:8px 10px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)">First 10 miles free</span>
-            <span style="padding:8px 10px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)">Careful handling</span>
-            <span style="padding:8px 10px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)">Fast response</span>
+          <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap">
+            <span class="hero-chip ui-hover">First 10 miles free</span>
+            <span class="hero-chip ui-hover">Careful handling</span>
+            <span class="hero-chip ui-hover">Fast response</span>
           </div>
         </div></div>
 
-        <div class="card"><div class="pad">
+        <div class="card ui-hover"><div class="pad">
           <h2 style="margin-top:0">Quick estimate checklist</h2>
           <p class="muted">Text or email these details for an accurate quote:</p>
           <ul class="list">
@@ -73,7 +81,7 @@
             <li>Any tight hallways/turns</li>
             <li>Preferred day/time window</li>
           </ul>
-          <div class="note"><b>Heads up:</b> We will NOT assemble/disassemble complex or antique utilities/furniture (stove, bed frames, complex washer/dryer sets, etc). Please ask if you have any specific questions.</div>
+          <div class="note ui-hover"><b>Heads up:</b> We will NOT assemble/disassemble complex or antique utilities/furniture (stove, bed frames, complex washer/dryer sets, etc). Please ask if you have any specific questions.</div>
           <p class="muted" style="margin:14px 0 0"><a href="contact.html">Phone numbers and email are on the Contact page →</a></p>
         </div></div>
       </div>

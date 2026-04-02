@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 340" preserveAspectRatio="none">
+  <path fill="#0a1520" d="M0 340 L0 306 L95 288 L175 302 L275 276 L395 298 L515 268 L635 292 L755 270 L875 298 L995 276 L1115 296 L1235 280 L1335 304 L1440 294 L1440 340 Z"/>
+  <path fill="#0d1a12" opacity="0.72" d="M0 340 L0 328 L1440 318 L1440 340 Z"/>
+  <g fill="#c5d4e8" opacity="0.1">
+    <path d="M163 304 L175 290 L187 304 Z"/>
+    <path d="M263 278 L275 264 L287 278 Z"/>
+    <path d="M383 300 L395 286 L407 300 Z"/>
+    <path d="M503 270 L515 256 L527 270 Z"/>
+    <path d="M623 294 L635 280 L647 294 Z"/>
+    <path d="M743 272 L755 258 L767 272 Z"/>
+    <path d="M863 300 L875 286 L887 300 Z"/>
+    <path d="M983 278 L995 264 L1007 278 Z"/>
+    <path d="M1103 298 L1115 284 L1127 298 Z"/>
+    <path d="M1223 282 L1235 268 L1247 282 Z"/>
+    <path d="M1323 306 L1335 292 L1347 306 Z"/>
+  </g>
+</svg>

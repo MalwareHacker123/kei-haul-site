@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 420" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="gf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a7da8"/>
+      <stop offset="100%" stop-color="#2d4d6e"/>
+    </linearGradient>
+  </defs>
+  <!-- Symmetric ridge: peaks mirrored around x=720 -->
+  <path fill="url(#gf)" d="M0 420 L0 298 L120 268 L180 208 L280 258 L400 182 L520 248 L640 168 L720 198 L800 152 L920 238 L1040 178 L1160 252 L1280 192 L1360 222 L1440 288 L1440 420 Z"/>
+  <!-- Snow cap on every major peak (apex-centered) -->
+  <g fill="#eef6ff" opacity="0.34">
+    <path d="M168 210 L180 180 L192 210 Z"/>
+    <path d="M388 184 L400 154 L412 184 Z"/>
+    <path d="M628 170 L640 140 L652 170 Z"/>
+    <path d="M708 200 L720 172 L732 200 Z"/>
+    <path d="M788 154 L800 124 L812 154 Z"/>
+    <path d="M1028 180 L1040 150 L1052 180 Z"/>
+    <path d="M1268 194 L1280 164 L1292 194 Z"/>
+    <path d="M1348 224 L1360 194 L1372 224 Z"/>
+  </g>
+</svg>

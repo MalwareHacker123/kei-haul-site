@@ -19,7 +19,7 @@
   <header>
     <div class="wrap">
       <div class="nav">
-        <a class="brand" href="index.html" aria-label="Kei Haul home">
+        <a class="brand ui-hover" href="index.html" aria-label="Kei Haul home">
           <span class="mark" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 15.5V8.8c0-.5.25-.97.67-1.25l6.5-4.3c.5-.33 1.15-.33 1.65 0l6.5 4.3c.42.28.67.75.67 1.25v6.7c0 .62-.33 1.2-.86 1.52l-6.5 3.95c-.43.26-.97.26-1.4 0l-6.5-3.95A1.78 1.78 0 0 1 4 15.5Z" stroke="white" stroke-width="1.6"/>
@@ -30,12 +30,20 @@
           <span><b>Kei Haul</b><br /><small class="muted">Krafty • efficient • innovative</small></span>
         </a>
         <nav class="links" aria-label="Site navigation">
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="pricing.html" aria-current="page">Pricing</a>
-          <a href="about.html">About</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html">Contact</a>
+          <a class="ui-hover" href="index.html">Home</a>
+          <details class="nav-services">
+            <summary>Services</summary>
+            <div class="nav-services-panel">
+              <a class="ui-hover" href="services.html#svc-appliances">Large appliances — quick rundown</a>
+              <a class="ui-hover" href="services.html#svc-home">Home-to-home — quick rundown</a>
+              <a class="ui-hover" href="services.html#svc-region">City &amp; rural — quick rundown</a>
+              <a class="nav-services-all ui-hover" href="services.html">Full services page →</a>
+            </div>
+          </details>
+          <a class="ui-hover" href="pricing.html" aria-current="page">Pricing</a>
+          <a class="ui-hover" href="about.html">About</a>
+          <a class="ui-hover" href="faq.html">FAQ</a>
+          <a class="ui-hover" href="contact.html">Contact</a>
         </nav>
       </div>
     </div>
@@ -47,22 +55,22 @@
 
     <section>
       <div class="pricing">
-        <div class="tile"><b>Mileage</b><ul class="list"><li><b>First 10 miles:</b> FREE</li><li><b>After 10 miles:</b> $0.50 per additional mile</li></ul></div>
-        <div class="tile"><b>Weight add-on</b><ul class="list"><li>Every <b>100 lbs over 200</b> (single item) is <b>+ $20</b></li></ul></div>
-        <div class="tile"><b>Item count discounts</b><ul class="list"><li><b>1 item:</b> full price</li><li><b>2nd item:</b> $5 off</li><li><b>3rd+ items:</b> $10 off</li><li><b>Bulk sale (8+ items, small items only):</b> $18 each item</li></ul></div>
-        <div class="tile"><b>Base item pricing</b><ul class="list"><li><b>Small</b>: $30 (+$2.50 each additional floor)</li><li><b>Medium</b>: $50 (+$7.50 each additional floor)</li><li><b>Large</b>: $75 (+$10 each additional floor)</li><li><b>Appliance</b>: $100 (+$15 each additional floor)</li></ul></div>
+        <div class="tile ui-hover"><b>Mileage</b><ul class="list"><li><b>First 10 miles:</b> FREE</li><li><b>After 10 miles:</b> $0.50 per additional mile</li></ul></div>
+        <div class="tile ui-hover"><b>Weight add-on</b><ul class="list"><li>Every <b>100 lbs over 200</b> (single item) is <b>+ $20</b></li></ul></div>
+        <div class="tile ui-hover"><b>Item count discounts</b><ul class="list"><li><b>1 item:</b> full price</li><li><b>2nd item:</b> $5 off</li><li><b>3rd+ items:</b> $10 off</li><li><b>Bulk sale (8+ items, small items only):</b> $18 each item</li></ul></div>
+        <div class="tile ui-hover"><b>Base item pricing</b><ul class="list"><li><b>Small</b>: $30 (+$2.50 each additional floor)</li><li><b>Medium</b>: $50 (+$7.50 each additional floor)</li><li><b>Large</b>: $75 (+$10 each additional floor)</li><li><b>Appliance</b>: $100 (+$15 each additional floor)</li></ul></div>
       </div>
 
-      <div class="card" style="margin-top:14px"><div class="pad">
+      <div class="card ui-hover" style="margin-top:14px"><div class="pad">
         <h2 style="margin:0 0 6px">Examples</h2>
         <div class="cols">
-          <div class="tile"><b>Example 1: Bedroom (2nd floor)</b><ul class="list"><li>Couch — $57.50</li><li>Large bed — $80</li><li>Dresser — $22.50</li><li>Wardrobe — $75</li><li><b>Total: $235</b></li></ul></div>
-          <div class="tile"><b>Example 2: Kitchen</b><ul class="list"><li>Washing machine — $100</li><li>Fridge — $95</li><li>Stove — $90</li><li>Kitchenware box — $20</li><li><b>Total: $305</b></li></ul></div>
-          <div class="tile"><b>Example 3: Washer/Dryer set</b><ul class="list"><li>Washer (250 lbs) — $125</li><li>Dryer (200 lbs) — $90</li><li>Cleaning kit/boxes — $20</li><li><b>Total: $235</b></li></ul></div>
+          <div class="tile ui-hover"><b>Example 1: Bedroom (2nd floor)</b><ul class="list"><li>Couch — $57.50</li><li>Large bed — $80</li><li>Dresser — $22.50</li><li>Wardrobe — $75</li><li><b>Total: $235</b></li></ul></div>
+          <div class="tile ui-hover"><b>Example 2: Kitchen</b><ul class="list"><li>Washing machine — $100</li><li>Fridge — $95</li><li>Stove — $90</li><li>Kitchenware box — $20</li><li><b>Total: $305</b></li></ul></div>
+          <div class="tile ui-hover"><b>Example 3: Washer/Dryer set</b><ul class="list"><li>Washer (250 lbs) — $125</li><li>Dryer (200 lbs) — $90</li><li>Cleaning kit/boxes — $20</li><li><b>Total: $235</b></li></ul></div>
         </div>
-        <div class="note">Extra trips and difficulty add-ons are quoted up front once we see the details.</div>
+        <div class="note ui-hover">Extra trips and difficulty add-ons are quoted up front once we see the details.</div>
       </div></div>
-      <p style="margin-top:18px"><a class="btn primary" href="contact.html">Get a personalized quote</a></p>
+      <p style="margin-top:18px"><a class="btn primary ui-hover" href="contact.html">Get a personalized quote</a></p>
     </section>
 
     <footer>

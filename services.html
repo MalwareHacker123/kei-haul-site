@@ -19,7 +19,7 @@
   <header>
     <div class="wrap">
       <div class="nav">
-        <a class="brand" href="index.html" aria-label="Kei Haul home">
+        <a class="brand ui-hover" href="index.html" aria-label="Kei Haul home">
           <span class="mark" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 15.5V8.8c0-.5.25-.97.67-1.25l6.5-4.3c.5-.33 1.15-.33 1.65 0l6.5 4.3c.42.28.67.75.67 1.25v6.7c0 .62-.33 1.2-.86 1.52l-6.5 3.95c-.43.26-.97.26-1.4 0l-6.5-3.95A1.78 1.78 0 0 1 4 15.5Z" stroke="white" stroke-width="1.6"/>
@@ -30,12 +30,20 @@
           <span><b>Kei Haul</b><br /><small class="muted">Krafty • efficient • innovative</small></span>
         </a>
         <nav class="links" aria-label="Site navigation">
-          <a href="index.html">Home</a>
-          <a href="services.html" aria-current="page">Services</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="about.html">About</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html">Contact</a>
+          <a class="ui-hover" href="index.html">Home</a>
+          <details class="nav-services is-on-page">
+            <summary aria-current="page">Services</summary>
+            <div class="nav-services-panel">
+              <a class="ui-hover" href="services.html#svc-appliances">Large appliances — quick rundown</a>
+              <a class="ui-hover" href="services.html#svc-home">Home-to-home — quick rundown</a>
+              <a class="ui-hover" href="services.html#svc-region">City &amp; rural — quick rundown</a>
+              <a class="nav-services-all ui-hover" href="services.html">Full services page →</a>
+            </div>
+          </details>
+          <a class="ui-hover" href="pricing.html">Pricing</a>
+          <a class="ui-hover" href="about.html">About</a>
+          <a class="ui-hover" href="faq.html">FAQ</a>
+          <a class="ui-hover" href="contact.html">Contact</a>
         </nav>
       </div>
     </div>
@@ -45,64 +53,82 @@
     <div class="services-hero">
       <p class="eyebrow">What we haul</p>
       <h1>Built for Colorado loads</h1>
-      <p class="lead">From tight Denver walk-ups to long rural driveways—we move the heavy stuff so you don’t have to wrestle it alone.</p>
+      <p class="lead">Click any card below for a full rundown—or use the <b>Services</b> menu in the header to jump straight to a topic.</p>
     </div>
 
     <section>
       <div class="service-cards">
-        <article class="service-card">
-          <div class="icon-wrap" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 21V7l8-4v18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M4 21h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-              <path d="M8 11h4M8 15h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-            </svg>
+        <details class="service-card ui-hover" id="svc-appliances">
+          <summary>
+            <div class="icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 21V7l8-4v18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4 21h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M8 11h4M8 15h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h2>Large appliances</h2>
+            <p class="service-teaser">Washers, dryers, fridges—moved carefully, not dragged.</p>
+            <span class="service-summary-hint">Click for full rundown</span>
+          </summary>
+          <div class="service-rundown">
+            <p><strong>General rundown:</strong> We specialize in moving heavy appliances that are awkward to lift and easy to scratch. That usually means protecting corners and finishes, using the right dolly or strap setup, and planning the path (doors, stairs, elevator) before we lift. We’ll confirm whether your job needs extra hands, a longer carry, or special care for tight turns.</p>
+            <ul>
+              <li>Typical jobs: washer/dryer swaps, fridge delivery, moving units between homes or into storage</li>
+              <li>Pricing ties to our item tiers, floors/stairs, weight add-ons, and mileage—see Pricing</li>
+              <li>We do <strong>not</strong> take apart complex or antique hookups; ask first if you’re unsure</li>
+            </ul>
           </div>
-          <h2>Large appliances</h2>
-          <p>Washers, dryers, fridges, and other bulky units—protected and moved door to door.</p>
-          <ul>
-            <li>Careful loading and securing</li>
-            <li>Stairs and floor add-ons quoted clearly</li>
-            <li>Heavy-item weight rules when they apply</li>
-          </ul>
-        </article>
+        </details>
 
-        <article class="service-card">
-          <div class="icon-wrap" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-              <path d="M9 22V12h6v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+        <details class="service-card ui-hover" id="svc-home">
+          <summary>
+            <div class="icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                <path d="M9 22V12h6v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h2>Home-to-home</h2>
+            <p class="service-teaser">A-to-B moves: your place, theirs, or the store parking lot.</p>
+            <span class="service-summary-hint">Click for full rundown</span>
+          </summary>
+          <div class="service-rundown">
+            <p><strong>General rundown:</strong> Home-to-home is anything where we’re hauling your items from one address to another—moving a couch you bought online, clearing out a bedroom set, or shuttling pieces between apartments. We coordinate pickup and drop-off windows, stack the truck sensibly so nothing shifts, and adjust the quote if the access is harder than expected (long walks, stairs, narrow halls).</p>
+            <ul>
+              <li>Great for Marketplace / store pickups and small partial moves—not always a full moving truck day rate</li>
+              <li>Multi-item discounts apply when you’re moving several pieces on one trip</li>
+              <li>Send addresses (or zips) and photos early so mileage and difficulty stay predictable</li>
+            </ul>
           </div>
-          <h2>Home-to-home</h2>
-          <p>Moves between homes, apartments, storage, and pickups—Marketplace buys, store hauls, and more.</p>
-          <ul>
-            <li>Pickup and drop-off coordination</li>
-            <li>Multi-item discounts when it fits your job</li>
-            <li>Mileage spelled out (first 10 miles free)</li>
-          </ul>
-        </article>
+        </details>
 
-        <article class="service-card">
-          <div class="icon-wrap" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 22s8-4.5 8-11a8 8 0 1 0-16 0c0 6.5 8 11 8 11z" stroke="currentColor" stroke-width="1.6"/>
-              <path d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" stroke="currentColor" stroke-width="1.6"/>
-            </svg>
+        <details class="service-card ui-hover" id="svc-region">
+          <summary>
+            <div class="icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22s8-4.5 8-11a8 8 0 1 0-16 0c0 6.5 8 11 8 11z" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" stroke="currentColor" stroke-width="1.6"/>
+              </svg>
+            </div>
+            <h2>City &amp; rural</h2>
+            <p class="service-teaser">Front Range tight spaces or longer drives—we’ve priced for both.</p>
+            <span class="service-summary-hint">Click for full rundown</span>
+          </summary>
+          <div class="service-rundown">
+            <p><strong>General rundown:</strong> Colorado jobs split two ways: dense neighborhoods with stairs, elevators, and parking headaches—or longer rural runs where mileage and carry distance matter more. We’re upfront about both. City jobs get extra attention to protecting hall walls and coordinating quick load/unload; rural jobs lean on clear mileage math and realistic timing.</p>
+            <ul>
+              <li>Urban: we factor elevators, floor counts, and awkward corners into your quote</li>
+              <li>Rural: first 10 miles free, then per-mile pricing keeps longer hauls fair</li>
+              <li>Either way: photos + honest description of access = fewer surprises on arrival</li>
+            </ul>
           </div>
-          <h2>City &amp; rural</h2>
-          <p>Front Range density or mountain-town logistics—we price distance and difficulty up front.</p>
-          <ul>
-            <li>Urban: elevators, tight turns, parking realities</li>
-            <li>Rural: longer carries and mileage that stays fair</li>
-            <li>Photos + details = faster, accurate quotes</li>
-          </ul>
-        </article>
+        </details>
       </div>
 
       <div class="services-band">
         <p><strong>Not sure which bucket you’re in?</strong> Send photos and addresses—we’ll tell you how we’d price it and what to expect on move day.</p>
-        <a class="btn primary" href="contact.html">Get a quote</a>
+        <a class="btn primary ui-hover" href="contact.html">Get a quote</a>
       </div>
     </section>
 
@@ -112,6 +138,17 @@
     </footer>
   </main>
   <script src="js/parallax.js"></script>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    (function () {
+      var id = location.hash.replace(/^#/, '');
+      if (!id) return;
+      var el = document.getElementById(id);
+      if (el && el.tagName === 'DETAILS') {
+        el.open = true;
+        requestAnimationFrame(function () { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+      }
+    })();
+  </script>
 </body>
 </html>
